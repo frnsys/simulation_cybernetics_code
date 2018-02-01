@@ -21,6 +21,11 @@ If you type `pwd` in the terminal and hit enter you should see `simulation_cyber
 3. Afterwards we need to _commit_ these changes with `git commit -m "MESSAGE"`, where `MESSAGE` is a message reminding us what changes were made. For instance, if I changed the background color, I might want to use `git commit -m "changed background color"`.
 4. Then we upload ("push") the changes to GitHub with `git push`.
 
+## How do I get the latest reference code?
+
+1. First navigate to the repo folder in the terminal (see above)
+2. Then run `git fetch upstream`.
+3. Then run `git merge upstream/master`.
 
 ## Reference
 
