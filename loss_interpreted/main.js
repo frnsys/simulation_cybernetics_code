@@ -24,11 +24,8 @@ function setup() {
 function draw() {
   background(200,250,200);
 
-  fill(250,250,250)
-  rect(250, 200, 150, 100)
-  rect(300, 100, 50, 150)
-
-
+  fill(0,0,255)
+  rect(50,50,10,100)
 }
 
 // resize canvas when the browser window resizes

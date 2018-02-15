@@ -1,0 +1,47 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+	color: red;
+	text-decoration: underline;
+}
+h1:hover {
+	color: blue;
+	background: yellow;
+}
+
+.fieri {
+	width: 100px;
+}
+
+.duck {
+	animation: duck-rotation 2s infinite linear;
+}
+
+video {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	z-index: -1;
+	width: 100%;
+}
+
+@keyframes duck-rotation {
+	0% {
+		transform: rotate(0deg);
+		background: red;
+		width: 100px;
+	}
+	50% {
+		width: 200px;
+	}
+	100% {
+		transform: rotate(359deg);
+		background: blue;
+		width: 100px;
+	}
+}
