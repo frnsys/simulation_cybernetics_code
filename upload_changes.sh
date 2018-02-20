@@ -1,5 +1,8 @@
 #!/bin/bash
 
+DIR=$(dirname "$0")
+cd "$DIR"
+
 read -p "Briefly describe your changes: " CHANGES
 git add -A
 git commit -m "${CHANGES}"
