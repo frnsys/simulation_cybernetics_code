@@ -1,5 +1,9 @@
 #!/bin/bash
 
+DIR=$(dirname "$0")
+cd "$DIR"
+
+echo -e "\n\n------------------------------------------"
 read -p "Which site do you want to run? (e.g. basic_1) " SITE
 
 if [ ! -d "$SITE" ]; then
@@ -7,7 +11,10 @@ if [ ! -d "$SITE" ]; then
     exit 1
 fi
 
-echo "Running the server now. Press Ctrl+C a few times to shut it down"
-echo "Open up localhost:8000 in your browser"
-cd $DIR/$SITE
+echo -e "\n\n------------------------------------------"
+echo -e "Running the server now. Press Ctrl+C a few times to shut it down"
+echo -e "Open up localhost:8000 in your browser\n\n"
+echo -e "------------------------------------------\n\n"
+
+cd "$DIR/$SITE"
 python2.7 -m SimpleHTTPServer 8000
